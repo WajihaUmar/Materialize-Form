@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title> Contact V4 </title>
+        <link rel="icon" type="image/ico" href="home.png" id="titlelogo"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body id="main">
+        <div class="wraper">
+            <div class="container">
+                <h3 id="hedng"> Say Hello! </h3>
+                <br>
+                <div class="text">
+                    <form class="col s12 l12 m6">
+                        <div class="row">
+                            <div class="input-field col s10 l10 m6">
+                                    <input type="text" id="name" placeholder="Enter your name" onfocus="this.placeholder=' '" onblur="this.placeholder='Enter your name'" required>
+                                    <label for="name" id="sel">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10 l10 m6">
+                                    <input type="email" id="email" placeholder="Enter your Email address" onfocus="this.placeholder=' '" onblur="this.placeholder='Enter your Email address'" required>
+                                    <label for="email" id="sel">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10 l10 m6">
+                                <select id="selection1">
+                                    <option value="1">Choose Services</option>
+                                    <option value="2">Online Store</option>
+                                    <option value="3">Ecommerce Business</option>
+                                    <option value="4">UI/UX Design</option>
+                                    <option value="5">Online Services</option>
+                                </select>
+                                <label for="selection1" id="sel">Needed Services</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10 l10 m6">
+                                <select id="selection2">
+                                    <option value="1">Select Budget</option>
+                                    <option value="2">1500$</option>
+                                    <option value="3">2000$</option>
+                                    <option value="4">2500$</option>
+                                </select>
+                                <label for="selection2" id="sel">Budget</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10 l10 m6">
+                                <textarea id="texta" class="materialize-textarea" cols="30" rows="10" placeholder="Your message here..." onfocus="this.placeholder=' '" onblur="this.placeholder='Your message here...'"></textarea>
+                                <label for="texta" id="sel">Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10 l10 m6">
+                                <div class="button">
+                                    <div class="sub_but">
+                                        <a href=""> <span> Submit </span></a>
+                                    </div>
+                                    <div class="inserticon"><i class="material-icons">trending_flat</i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="javas.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <script>
+                $(document).ready(function(){
+                 $('select').formSelect();
+              
+                 
+               });
+             </script>
+    </body>
+</html>
